@@ -1,0 +1,30 @@
+.containerImages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 12px;
+    gap: 22px;
+
+    @media screen and (max-width:1117px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (max-width:900px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width:600px) {
+        grid-template-columns: 1fr;
+    }
+}
+.image{
+    width: 250px;
+    height: 250px;
+    padding: 12px;
+    background-color: #d3d3d38f;
+    border-radius: 6px;
+
+    @media screen and (max-width:600px) {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+}

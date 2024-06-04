@@ -1,0 +1,48 @@
+.content{
+    padding: 22px;
+    margin: 22px auto;
+    width: calc(100% - 22px);
+    border-top: 1px solid var(--hoverButton);
+    position: relative;
+}
+.content > .topContent > h1{
+    color: var(--text);
+}
+.argument{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+.argument > li {
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    justify-content: space-between;
+    margin: 22px auto;
+    color: var(--buttons);
+    flex-direction: column;
+    gap: 12px;
+    width: 250px;
+    border: 1px solid var(--hoverButton);
+    padding: 12px;
+    border-radius: 12px;
+    transition: all .3s ease-in;
+}
+.argument > li.active{
+    opacity: 1;
+    animation: camingOpacity .3s linear;
+}
+.argument > li:hover{
+    background-color: var(--hoverButton);
+}
+.argument > li > span{
+    font-size: 14pt;
+    text-align: center;
+}
+.argument > li > i{
+    font-size: 50pt;
+    background-color: var(--hoverButton);
+    padding: 22px;
+    border-radius: 12px;
+}

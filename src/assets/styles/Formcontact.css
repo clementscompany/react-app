@@ -1,0 +1,74 @@
+.formContact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    gap: 22px;
+    @media screen and (max-width:800px) {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+.formContact > header{
+    color: var(--buttons);
+    @media screen and (max-width:800px) {
+        width: calc(100% - 12px);
+        border-bottom: 1px solid var(--hoverButton);
+        padding-bottom: 22px;
+    }
+}
+.formContact > header > h1{
+    font-size: 44pt;
+    @media screen and (max-width:800px) {
+        font-size: 22pt;
+    }
+}
+.formContact > header > h3{
+    font-size: 22pt;
+    @media screen and (max-width:800px) {
+        font-size: 18pt;
+    }
+}
+.inputs{
+    border-radius: 16px;
+    box-shadow: 0 0 14px 4px #55555531;
+    padding: 22px;
+}
+.inputBox{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 400px;
+    margin: 12px 0;
+    @media screen and (max-width:800px) {
+        width: 320px;
+    }
+}
+.inputBox > input{
+    background-color: var(--hoverButton);
+    padding: 12px;
+    border-radius: 8px;
+    color: var(--buttons);
+}
+.inputBox > label{
+    color: var(--buttons);
+    font-weight: bold;
+}
+.sendButton{
+    margin: 12px 0;
+    position: relative;
+}
+.sendButton > button{
+    width: 200px;
+    padding: 12px;
+    background-color: var(--buttons);
+    border-radius: 8px;
+    color: var(--base);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.sendButton > button:hover{
+    opacity: 0.7;
+}

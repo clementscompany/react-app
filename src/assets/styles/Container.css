@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 22px;
+    background-color: var(--hoverButton);
+    margin-top: 22px;
+    width: calc(100% - 22px);
+    border-radius: 22px;
+}
+.produtosPage{
+    width: calc(100% - 22px);
+    
+    @media screen and (max-width:600px) {
+        width: 100%;
+    }
+}
+.leftContainer{
+    max-width: 600px;
+    min-width: 320px;
+}
+.leftContainer > *{
+    color: var(--buttons);
+}
+.leftContainer > h1{
+    font-size: 50pt;
+    overflow-wrap:normal;
+    animation: openOpacity .3s linear;
+}
+.leftContainer > h2{
+    font-size: 33pt;
+    animation: openingLeft .5s linear;
+}
+.leftContainer > h3{
+    font-size: 22pt;
+    animation: openingLeft .5s linear;
+}
+.leftContainer > span{
+    font-size: 14pt;
+    overflow-wrap: break-word;
+}
+.links{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    position: absolute;
+    right: 16px;
+}
+.links > a > i{
+    color: var(--buttons);
+    font-size: 18pt;
+}
+.buttons {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.buttons > a > button{
+    padding: 10px;
+    width: 150px;
+    border-radius: 8px;
+    font-size: 14pt;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.buttons > a > button:hover{
+    opacity: 0.5;
+}
+.aboutButton{
+    background-color: var(--buttons);
+    color: var(--base);
+}
+.contactButton{
+    border: 1px solid var(--buttons);
+    background-color: transparent;
+    color: var(--buttons);
+}
+.rithContainer{
+    width: 500px;
+    height: 400px;
+}

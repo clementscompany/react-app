@@ -1,0 +1,97 @@
+.bodyContainer{
+    margin: 12px auto;
+    width: 100%;
+    margin-right: 12px;
+    border-radius: 12px;
+    background: var(--base);
+    height: calc(100% - 22px);
+    padding: 12px;
+}
+.bodyContainer > header{
+    border-bottom: 1px solid #8080802c;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--card);
+}
+.bodyContainer > header > button{
+    padding: 8px;
+    background-color: var(--card);
+    color: var(--base);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.bodyContainer > header > button:hover{
+    opacity: .8;
+}
+.previewDash{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+
+    @media screen and (max-width:900px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    @media screen and (max-width:600px) {
+        grid-template-columns: 1fr;
+    }
+}
+.contentDashBoard{
+    position: relative;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+}
+.contentDashBoard::-webkit-scrollbar{
+    width: 8px;
+    background-color: #6b6b6b34;
+
+}
+.contentDashBoard::-webkit-scrollbar-thumb{
+    border-radius: 22px;
+    background-color: var(--card);
+}
+.cardDash{
+    padding: 12px;
+    border: 1px solid #6b6b6b34;
+    margin: 12px;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 22px;
+    color: var(--card);
+}
+.seeButton{
+    margin-top:44px;
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: var(--card);
+    color: var(--base);
+    font-weight: bold;
+    font-size: 13pt;
+    cursor: pointer;
+}
+.seeButton:hover{
+    opacity: .8;
+}
+.mediasSociales{
+    text-align: left;
+}
+.mediasSociales > ul > li{
+    margin: 12px auto;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #6b6b6b34;
+    border-radius: 8px;
+    color: gray;
+}
+.backButton{
+    display: none;
+}
+.backButton.active{
+    display: block;
+}

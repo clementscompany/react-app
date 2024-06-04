@@ -1,0 +1,28 @@
+@keyframes openingLeft {
+    from{
+        transform: translate(12px);
+    } to{
+        transform: translate(0);
+    }
+}
+@keyframes openingRigth {
+    from{
+        transform: translate(-12px);
+    } to{
+        transform: translate(0);
+    }
+}
+@keyframes openOpacity {
+    from{
+        opacity: 0;
+    } to{
+        opacity: 1;
+    }
+}
+@keyframes openingop {
+    from{
+        transform: translateY(12px);
+    } to{
+        transform: translate(0);
+    }
+}

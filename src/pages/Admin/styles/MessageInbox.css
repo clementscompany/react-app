@@ -1,0 +1,119 @@
+.topListInbox{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    background-color: var(--card);
+    color: var(--base);
+    gap: 12px;
+}
+.topListInbox input[type="checkbox"] {
+    cursor: pointer;
+}
+.topListInbox input[type="checkbox"]:hover{
+    outline: 1px solid var(--hoverButton);
+    border-radius: 3px;
+}
+.box{
+    padding: 4px;
+    margin: 3px 0;
+    border: 1px solid  #99999933;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: var(--hoverButton);
+}
+.box > span{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.box > span > small{
+    color: gray;
+}
+.box > small{
+    color: gray; 
+}
+.MessageModal{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--base);
+    z-index: 12;
+    top: 0;
+    left: 0;
+    display:none;
+}
+.MessageModal.active{
+    display: block;
+    animation: cammingModal .3s linear;
+}
+@keyframes cammingModal {
+    from{
+        opacity: 0;
+    } to{
+        opacity: 1;
+    }
+}
+.userSend{
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+}
+.cardUserMessages{
+    display: flex;
+    align-items: flex-start;
+    padding: 12px;
+    gap: 6px;
+    position: relative;
+}
+.cardUserMessages >  span{
+    background-color: rgba(145, 145, 145, 0.13);
+    padding: 12px;
+    border-radius: 0 22px 22px 22px;
+    margin-top: 25px;
+}
+.trashMess{
+    position: absolute;
+    bottom: -12px;
+    left: 22px;
+    background-color: var(--hoverButton);
+    padding: 6px;
+    border-radius: 6px;
+    color: gray;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.trashMess:hover{
+    background-color: #ff62629d;
+    color: var(--base);
+}
+.toogleButtonModal{
+    padding: 6px;
+    background-color: var(--card);
+    color: var(--base);
+    border-radius: 6px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.toogleButtonModal:hover{
+    opacity: .7;
+}
+.deleteButton{
+    background-color: transparent;
+    padding: 3px;
+    color: var(--base);
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    display: none;
+}
+.deleteButton.active{
+    display: block;
+}
+.deleteButton:hover{
+    border: 1px solid var(--base);
+
+}

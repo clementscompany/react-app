@@ -1,0 +1,118 @@
+.imgUser{
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+}
+.navMenuBar{
+    background-color: var(--base);
+    width: 250px;
+    height: calc(100% - 22px);
+    margin: 12px auto;
+    border-radius: 0 12px 12px 0;
+    padding: 12px;
+    transition: width .3s ease-in-out;
+    @media screen and (max-width:800px) {
+        width: 60px;
+        padding: 6px;
+        transition: width .3s ease-in-out;
+    }
+}
+.navMenuBar.active{
+    width: 60px;
+    padding: 6px;
+    transition: width .3s ease-in-out;
+}
+.navMenuBar > ul > li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.navMenuBar  > ul {
+    height: 100%;
+    position: relative;
+}
+.topMenubar{
+    background-color: var(--card);
+    padding: 8px 22px;
+    border-radius: 12px;
+    color: var(--base);
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+}
+.topMenubar.active{
+    padding: 6px;
+}
+.topMenubar{
+    @media screen and (max-width:800px) {
+        padding: 6px;
+    }
+}
+.topMenubar.active > span{
+    display: none;
+}
+.topMenubar > span{
+    @media screen and (max-width:800px) {
+        display: none;
+    }
+}
+.list{
+    margin: 12px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 8px 2px #58585831;
+    transition: all .3s ease;
+}
+.list{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--card);
+    font-weight: bold;
+    padding: 12px;
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+
+    @media screen and (max-width:800px) {
+        padding: 6px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.list:hover{
+    background-color: var(--card);
+}
+.list:hover{
+    color: var(--base);
+}
+.logOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.list.active{
+    padding: 6px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list.active >  span{
+    display: none;
+}
+.list >  span{
+    @media screen and (max-width:800px) {
+        display: none;
+    }
+}
+.toogleButton{
+    @media screen and (max-width:800px) {
+        display: none;
+    }
+}
+.list.render{
+    background-color: var(--card);
+    color: var(--base);
+}

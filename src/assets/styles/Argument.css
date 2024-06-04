@@ -1,0 +1,84 @@
+.section{
+    border-top: 1px solid var(--hoverButton);
+    padding: 22px;
+    width: calc(100% - 22px);
+    margin: 22px auto;
+}
+.ContainerArgument{
+    background-color: var(--hoverButton);
+    padding: 22px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ContainerArgument > a{
+    background-color: var(--buttons);
+    padding: 12px;
+    border-radius: 12px;
+    color: var(--base);
+}
+/* Products */
+.leftProducts{
+    width: 500px;
+    height: 320px;
+    padding: 12px;
+    border-radius: 22px;
+    background-color: var(--hoverButton);
+}
+.productsContainer{
+    width: calc(100% - 22px);
+    margin: 22px auto;
+    padding: 22px;
+}
+.conentProducts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 22px auto;
+    gap: 22px;
+}
+.rigtProducts{
+    width: 600px;
+}
+.rigtProducts > h1{
+    font-size: 33pt;
+    color: var(--text);
+}
+.rigtProducts > span{
+    font-size: 14pt;
+    color: var(--text);
+}
+.saberMaisBtton{
+    background-color: var(--buttons);
+    color: var(--base);
+    padding: 12px 22px;
+    margin-top: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    font-size: 14pt;
+}
+
+@media only screen and (max-width:800px) {
+    .conentProducts{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 22px auto;
+        gap: 22px;
+    }
+
+    .leftProducts{
+        width: 100%;
+        height: 320px;
+        padding: 12px;
+        border-radius: 22px;
+        background-color: var(--hoverButton);
+    }
+    .rigtProducts{
+        width: 100%;
+    }
+}

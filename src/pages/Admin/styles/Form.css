@@ -1,0 +1,150 @@
+.formProducts{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 22px;
+    gap: 12px;
+}
+.preview{
+    flex: 1;
+    height: 300px;
+    border: 1px solid #6b6b6b21;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width:800px) {
+        display: none;
+    }
+}
+
+.imagePreview{
+    width: 300px;
+    height: 200px;
+    padding: 12px;
+    color: var(--card);
+}
+.imagePreview > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.data{
+    width: 650px;
+    padding: 12px;
+    border: 1px solid #6b6b6b21;
+    color: var(--card);
+    border-radius: 6px;
+    @media screen and (max-width:900px) {
+        width: 100%;
+    }
+}
+.data > .input{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0;
+}
+.input > label{
+    font-weight: bold;
+}
+.input > textarea{
+    border: 1px solid #80808015;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #6b6b6b21;
+}
+.data > .input > input{
+    width: 100%;
+    background-color: #80808015;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #80808015;
+}
+.data > .input > input::-webkit-file-upload-button{
+    background-color: var(--card);
+    color: var(--base);
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+}
+.data > button{
+    width: 150px;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+.data > button:nth-of-type(1){
+    background-color: var(--card);
+    color: var(--base);
+    font-weight: bolder;
+    border: 1px solid transparent;
+}
+.data > button:nth-of-type(2){
+    background-color: var(--base);
+    color: var(--card);
+    font-weight: bolder;
+    border: 1px solid var(--card);
+    margin-left: 12px;
+}
+.response{
+    padding: 12px;
+}
+.response > .error{
+    color: #ec4242;
+}
+.response > .sucess{
+    color: green;
+}
+/* ////// */
+.containerLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formDataAdmin{
+    background-color: var(--base);
+    width: 400px;
+    border-radius: 6px;
+    box-shadow: 0 0 14px 4px #61616128;
+    padding-bottom: 22px;
+    @media screen and (max-width:600px) {
+        width: calc(100%);
+    }
+}
+.formDataAdmin > .inputBox > label{
+    color: var(--card);
+}
+.loginButton{
+    padding: 12px;
+    cursor: pointer;
+    background-color: var(--card);
+    color: var(--base);
+    border-radius: 8px;
+}
+.textError{
+    text-align: center;
+}
+.textError .response h2{
+    text-align: left;
+    color: var(--card);
+}
+.topForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    background-color: var(--base);
+    margin: 12px auto;
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: 0 0 14px 4px #80808046;
+    color: var(--card);
+}
+.topForm > i{
+    font-size: 33pt;
+}

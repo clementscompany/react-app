@@ -1,0 +1,49 @@
+.tabele {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 13px;
+    margin-top: 22px;
+
+  }
+  
+  .tabele th,
+  .tabele td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .tabele th {
+    background-color: var(--card);
+    color: var(--base);
+  }
+  
+  .tabele tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .tabele tbody tr:hover {
+    background-color: #ddd;
+  }
+  .optionTabele{
+    width: 120px;
+  }
+  .optionTabele > button{
+    padding: 6px;
+    border-radius: 6px;
+    width: 33px;
+    margin: 0 6px;
+    @media screen and (max-width:600px) {
+        margin: 6px;
+    }
+  }
+  .optionTabele > button:nth-of-type(1){
+    background-color:dodgerblue;
+    color: var(--base);
+  }
+  .optionTabele > button:nth-of-type(2){
+    background-color:rgb(245, 33, 33);
+    color: var(--base);
+  }

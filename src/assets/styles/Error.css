@@ -1,0 +1,22 @@
+.errorCard{
+    padding: 8px;
+    text-align: center;
+    border-radius: 8px;
+    animation: openingError .1s linear;
+}
+.errorCard.error{
+    background-color: #f04a4a49;
+    color: #ff3535;
+}
+.errorCard.sucess{
+    background: #42c54842;
+    color: green;
+}
+
+@keyframes openingError{
+    from{
+        transform: scale(0.5);
+    } to{
+        transform: scale(1);
+    }
+}
